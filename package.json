@@ -1,0 +1,13 @@
+{
+  "name": "student-shop",
+  "version": "1.0.0",
+  "private": true,
+  "workspaces": ["ecommerce-backend", "ecommerce-frontend"],
+  "scripts": {
+    "server": "npm run dev --workspace=ecommerce-backend",
+    "client": "npm run dev --workspace=ecommerce-frontend",
+    "build": "npm run build --workspace=ecommerce-frontend",
+    "seed": "npm run seed --workspace=ecommerce-backend",
+    "test": "npm run test --workspace=ecommerce-backend"
+  }
+}
